@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Bangers&family=Bebas+Neue&family=Carlito:wght@700&family=Castoro+Titling&family=Cormorant+Garamond&family=Fjalla+One&family=Gilda+Display&family=Gloock&family=Goblin+One&family=Holtwood+One+SC&family=Inter&family=Kanit&family=Konkhmer+Sleokchher&family=Koulen&family=Lilita+One&family=Merriweather:ital@0;1&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@200;400&family=Permanent+Marker&family=Poppins:wght@300;400;500&family=Rajdhani:wght@700&family=Righteous&family=Roboto+Condensed:ital@1&family=Roboto:wght@300&family=Ruda:wght@600&family=Rufina&family=Russo+One&family=Share+Tech+Mono&family=Shrikhand&family=Slabo+27px&family=Squada+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    display: flex;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: -4px 3px 24px rgb(0,0,0,0.3);
+    cursor: pointer;
+    animation-name: slideinLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+
+.card img {
+    height: 550px;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription__image img {
+    height: 550px;
+    border-radius: 8px;
+}
+
+.Welcome {
+    margin-bottom: 60px;
+    font-size: 52px;
+    font-weight: 400;
+    animation-name: slideinLeft;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+
+@keyframes slideinLeft {
+    from{
+        transform: translate(-300px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+.secondary_card_section h4 {
+    font-size: 26px;
+    margin-bottom: 80px;
+    letter-spacing: .1rem;
+}
+
+.secondary_card_section span {
+    position: relative;
+    bottom: 60px;
+    font-weight: 500;
+}
+
+.line {
+    height: 3px;
+    width: 60%;
+    background-color: #0194e9;
+    position: relative;
+    bottom: 50px;
+    margin: auto;
+}
+
+.input_box {
+    margin: 10px 5px;
+}
+
+.input_box input {
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    border: 2px solid #0194e9;
+}
+
+.input_box input::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+}
+
+.input_box button {
+    height: 40px;
+    position: relative;
+    top: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #0194e9;
+    color: #f1f1f1;    
+    cursor: pointer;
+}

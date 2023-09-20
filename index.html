@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="Welcome">Welcome</h1>
+    <div class="main-container">
+        <img src="/assets/newimg.jpg"/>
+        <div id="card">
+            <div class="secondary_card_section">
+                <h4 class="connected_title">Stay Connected!</h4>
+                <span class="join-now">Join 60,000 product managers 
+                <br>recieving weekly updates</span>
+
+                <span class="special-offers">Join & recieve <br>News Updates, 
+                <br>Special Offers, and more!</span>
+                <div class="line"></div>
+                <div class="input_box">
+                    <input type="text" placeholder="Email" id="input-box"/>
+                    <button id="input-btn" onclick="inputbtn()">Subscribe to our weekly newsletter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const inputEl = document.getElementById('input-box');
+        const clearInput = document.getElementById('input-btn');
+
+        clearInput.addEventListener("click", function(){
+            inputEl.value = "";
+        });
+    </script>
+</body>
+</html>
